@@ -24,7 +24,7 @@ export const validateAddSchool = (req, res, next) => {
     errors.push({ field: "longitude", message: "Longitude must be between -180 and 180" });
   }
 
-  // If any errors found → return all at once
+
   if (errors.length > 0) {
     return res.status(400).json({
       success: false,
